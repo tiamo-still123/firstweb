@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小站</title>
+    <link rel="stylesheet" href="css\导航条.css">
+    <link rel="stylesheet" href="css\留言.css">
+    <script>
+        function login() {
+            location.href = 'login.html'
+        }
+
+        function Toform() {
+            location.href = '表单.html'
+        }
+    </script>
+    <link rel="stylesheet" href="css\img.css">
+    <link rel="stylesheet" href="css\search.css">
+    <link rel="stylesheet" href="css\MY.css">
+    <script src="js\all.js"></script>
+    <link rel="shortcut icon" href="img\favicon.ico">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <ul class="menu bgback">
+        <li onclick="ww()">首页</li>
+        <li onclick="music()">音乐</li>
+        <li>其他
+            <ul class="nav bgback">
+                <li onclick="search()">帮你百度</li>
+                <li onclick="ring()">Ring</li>
+                <li onclick="Toform()">表单注册页面</li>
+                <li>三级导航栏
+                    <ul class="nav_child">
+                        <li>无</li>
+                        <li>内</li>
+                        <li>容</li>
+                    </ul>
+                </li>
+                <li>后续开发中</li>
+            </ul>
+        </li>
+        <li onclick="TurnON()">作者</li>
+    </ul>
+    <div id="main">
+        <div class="logBtn">
+            <input type="button" value="登录" id="logB" onclick="login()">
+        </div>
+        <!-- 搜索栏 -->
+        <div class="search">
+            <form action="" class="searchF">
+                <input type="text" name="word" id="kw" class="txtItem search-ipt sh_ipt" onkeydown="if(isEnter(event)){myBtn.click();return false;}" placeholder="请输入搜索内容">
+                <input type="button" id="myBtn" onclick="formSubmit()" value="GO" class="button">
+            </form>
+        </div>
+
+
+        <!-- 图片轮播 -->
+        <div class="imgBox">
+            <img src="https://pic.netbian.com/uploads/allimg/190824/205524-1566651324f88b.jpg" alt="1" class="img-slide img1">
+            <img src="https://pic.netbian.com/uploads/allimg/200618/005100-1592412660d6f4.jpg" alt="2" class="img-slide img2">
+            <img src="https://pic.netbian.com/uploads/allimg/190824/212516-15666531161ade.jpg" alt="3" class="img-slide img3">
+            <img src="https://pic.netbian.com/uploads/allimg/220410/183556-1649586956409a.jpg" alt="3" class="img-slide img3">
+            <img src="https://pic.netbian.com/uploads/allimg/220320/165420-16477664603805.jpg" alt="3" class="img-slide img3">
+        </div>
+
+        <div class="introduction">
+            <ul class="intro">
+                <b style="font-size: 25px;">对此小站做出说明</b>
+                <li>这是web期末大作业</li>
+                <li style="color: red; font-size:20px;">这个搜索框能用</li>
+                <li style="color: red; font-size:20px; font-weight: 900;">点击登录打开登录界面</li>
+                <li>右边推荐网站</li>
+                <li>可以听左下角的歌</li>
+                <li id="what" style="text-decoration: line-through;" onclick="ff()">可以到处瞎点点</li>
+            </ul>
+        </div>
+
+        <!-- 推荐网站 -->
+        <div class="web">
+            <ul class="Tweb">
+                <li class="T"><a href="http://4399.com" target="_blank">4399小游戏</a></li>
+                <li class="T"><a href="https://www.underseacat.com/fan" target="_blank">小风扇</a></li>
+                <li class="T"><a href="http://my.wulvxinchen.cn/search">友情链接</a></li>
+            </ul>
+        </div>
+
+        <!-- 留言板 -->
+        <div class="saysome">
+            <textarea placeholder="留言板(可以写下意见，但是我看不到)"></textarea>
+            <button id="but">发布</button>
+            <ol class="Say"></ol>
+            <script>
+                var txt = document.querySelector("textarea");
+                var btn = document.querySelector("button");
+                var ol = document.querySelector("ol");
+                btn.onclick = function() {
+                    if (txt.value == "") {
+                        alert("您没有输入内容")
+                    } else {
+                        var li = document.createElement("li");
+                        li.innerHTML = txt.value + "<a href='javascript:;'>删除</a>"
+                        txt.value = "";
+                        ol.insertBefore(li, ol.children[0]);
+                        var as = document.querySelectorAll("a");
+                        for (var i = 0; i < as.length; i++) {
+                            as[i].onclick = function() {
+                                ol.removeChild(this.parentNode);
+                            }
+                        }
+                    }
+                }
+            </script>
+        </div>
+        <embed id="sound" height="58" width="120"  src="sound\The Weeknd - Save Your Tears.mp3">
+    </div>
+    <!-- 自我简介 -->
+    <div class="introduceMyself" id="intt">
+        <ul class="Mynav">
+            <li>计算机类4班</li>
+            <li>胡文彬</li>
+            <li><a href="https://space.bilibili.com/153381565" target="_blank">B站</a></li>
+            <li><a href="https://www.acfun.cn/u/66670232" target="_blank">A站</a></li>
+            <li><a href="https://music.163.com/#/user/home?id=1436676636" target="_blank">网易云</a></li>
+            <li class="imp"> <a href="thanks.html">！支持作者！</a> </li>
+
+        </ul>
+    </div>
+</body>
+
+
+</html>

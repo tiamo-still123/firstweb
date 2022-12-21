@@ -1,0 +1,190 @@
+body {
+    background: linear-gradient(to right, pink, skyblue);
+    font-family: '宋体';
+}
+
+.loginform {
+    padding: 0px;
+    text-align: center;
+    background-color: skyblue;
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0px 0px 50px #fff, inset 10px 0px 80px #f0f, inset -10px 0px 80px #0ff, inset 0px 0px 150px #f0f, inset -10px 0px 150px #0ff, 0px 0px 50px #fff, -10px 0px 50px #f0f, 10px 0px 50px #0ff;
+    ;
+}
+
+.title {
+    font-size: 45px;
+    color: lightgoldenrodyellow;
+    font-weight: bolder;
+    padding: 0px;
+    margin-top: 60px;
+}
+
+.inputBox {
+    width: 300px;
+    height: 40px;
+    width: 300px;
+    padding: 0px;
+    margin: 8px auto;
+    position: relative;
+    top: -20px;
+}
+
+.remember {
+    font-size: 16px;
+    padding: 0px;
+    font-weight: 700;
+}
+
+.login {
+    padding: 0px;
+    margin: 20px auto;
+}
+
+.Lbotton {
+    width: 65px;
+    height: 30px;
+}
+
+.logo_box {
+    width: 0px;
+    height: 0px;
+    z-index: 999;
+    position: absolute;
+    top: -80px;
+    left: 175px;
+    right: 0;
+    bottom: 0;
+}
+
+.logo_img {
+    border: 5px solid yellowgreen;
+    border-radius: 120px;
+    float: left;
+    width: 130px;
+}
+
+.logo_img:hover {
+    /* transform: rotatez(180deg); */
+    border: 5px dashed red;
+    animation: rotateImg 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation: rotateImg 5s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes rotateImg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotateImg {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.title:hover {
+    cursor: default;
+}
+
+#form_id input[type="password"]:focus,
+input[type="num"]:focus {
+    border-color: #2E8B57;
+    box-shadow: 0px 0px 18px pink;
+}
+
+#form_id input,
+button {
+    border-radius: 10px;
+    cursor: pointer;
+    background-clip: padding-box;
+}
+
+.reg:hover {
+    background-color: pink;
+}
+
+#form_register {
+    padding: 0px;
+    text-align: center;
+    background-color: skyblue;
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0px 0px 50px #fff, inset 10px 0px 80px skyblue, inset -10px 0px 80px #0ff, inset 0px 0px 150px skyblue, inset -10px 0px 150px #0ff, 0px 0px 50px #fff, -10px 0px 50px skyblue, 10px 0px 50px #0ff;
+    ;
+}
+
+#form_register div {
+    padding: 0;
+    line-height: 60px;
+}
+
+#form_register input[type="num"],
+input[type="password"] {
+    width: 300px;
+    height: 40px;
+}
+
+
+/* 
+#form_register input[type="button"] {
+    width: 65px;
+    height: 30px;
+} */
+
+.retitle {
+    margin-bottom: -2px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logindiv {
+    padding: 0;
+}
+
+.registerButton {
+    border-radius: 10px;
+    width: 65px;
+    height: 30px;
+}
+
+.loginButton {
+    padding: 0;
+    margin-top: -15px;
+}
+
+.log:hover {
+    background-color: pink;
+}
+
+.checkCode{
+    padding: 0;
+    margin-left: -120px;
+}
+.checkC{
+    width: 100px;
+    height: 25px;
+}

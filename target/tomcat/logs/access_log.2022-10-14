@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [14/Oct/2022:17:52:59 +0800] "GET / HTTP/1.1" 200 57 http-bio-8080-exec-1 110
+0:0:0:0:0:0:0:1 - - [14/Oct/2022:17:53:08 +0800] "GET /tomcat_demo_war/req2 HTTP/1.1" 404 991 http-bio-8080-exec-2 6
+0:0:0:0:0:0:0:1 - - [14/Oct/2022:17:53:19 +0800] "GET /req2.html HTTP/1.1" 200 423 http-bio-8080-exec-3 3
+0:0:0:0:0:0:0:1 - - [14/Oct/2022:17:53:28 +0800] "POST /tomcat_demo_war/req2 HTTP/1.1" 404 991 http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [14/Oct/2022:17:54:02 +0800] "GET / HTTP/1.1" 200 57 http-bio-8080-exec-1 83
+0:0:0:0:0:0:0:1 - - [14/Oct/2022:17:54:13 +0800] "POST /tomcat_demo_war/req2 HTTP/1.1" 404 991 http-bio-8080-exec-2 3

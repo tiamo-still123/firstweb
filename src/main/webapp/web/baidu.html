@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>让我帮你百度一下</title>
+    <link rel="stylesheet" href="css\baidu.css">
+</head>
+
+<body>
+    <img id="arrow" src="img\arrow.png" alt="arrow">
+    <span class="about">?</span>
+    <div class="container">
+        <h1 class="title">要我帮你<img class="baidu" src="img\baidu_logo.png" alt="百度">是吧</h1>
+        <span class="search-container">
+				<input type="text" id="search" />
+				<input type="button" id="get" class="button" value="百度一下" />
+			</span>
+        <div id="instrcutions">输入你问的问题，然后点击百度一下</div>
+        <div id="link">
+            <input type="text" readonly="readonly" id="url" />
+            <div>
+                <input style="margin: 0 10px;" type="button" class="button but" id="copy" value="复制" />
+                <input style="margin: 0 10px;" type="button" class="button but" id="skip" value="预览" />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js\baidu.js">
+    </script>
+</body>
+
+</html>

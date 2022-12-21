@@ -1,0 +1,40 @@
+.introduceMyself {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    box-shadow: inset 0px 0px 50px #fff, inset 10px 0px 80px #fff, inset -10px 0px 80px #0ff, inset 0px 0px 150px skyblue, inset -10px 0px 150px #0ff, 0px 0px 50px #fff, -10px 0px 50px pink, 10px 0px 50px #0ff;
+    ;
+    border-radius: 50px;
+}
+
+.Mynav {
+    padding: 20px 0;
+}
+
+.Mynav>li {
+    font-family: "宋体";
+    margin-top: 25px;
+    list-style-type: none;
+    font-size: 25px;
+    color: black;
+    text-shadow: 5px 5px 10px skyblue;
+}
+
+.Mynav>li>a {
+    text-decoration: none;
+    color: lightsalmon;
+}
+
+.Mynav>li>a:hover {
+    text-decoration: underline;
+    color: red;
+}

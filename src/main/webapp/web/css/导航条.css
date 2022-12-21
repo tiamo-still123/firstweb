@@ -1,0 +1,265 @@
+body {
+    background: linear-gradient(to right, pink, skyblue);
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 
+.nav {
+    display: inline-block;
+}
+
+.DaoHangTiao {
+    padding: 0;
+    margin-top: 0;
+}
+ */
+
+
+/* 
+.DaoHangTiao {
+    width: 100%;
+    height: 48px;
+    background-color: #E8E7E3;
+    margin: 0px auto;
+    padding: 0px;
+} */
+
+
+/* 
+.First {
+    list-style-type: none;
+    list-style-position: outside;
+    text-align: center;
+    line-height: 18vh;
+    width: 20vh;
+    margin-top: 10px;
+    float: inline-end;
+}
+
+.DaoHangTiao a {
+    border-radius: 10px;
+    font-size: 32px;
+    display: block;
+    text-decoration: none;
+    color: lightsalmon;
+    padding: 0px;
+    border: 1px solid;
+}
+
+.DaoHangTiao a:hover {
+    text-decoration: underline;
+    color: gray;
+    background-color: none;
+    background-clip: border-box;
+    box-shadow: 20px 5px 20px lightsalmon;
+    border: 3px solid lightsalmon;
+}
+
+#loginW:hover {
+    background-color: skyblue;
+    color: red;
+}
+ */
+
+
+/* 登录按钮 */
+
+.logBtn {
+    text-align: right;
+    padding: 0;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+
+#logB {
+    background-color: skyblue;
+    font-size: 20px;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+#logB:hover {
+    color: lightsalmon;
+    border: 2px solid lightsalmon;
+    cursor: pointer;
+}
+
+.bgback {
+    background-color: rgb(60, 60, 60);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    height: 40px;
+    padding: 4px 0;
+}
+
+.nav {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    padding: 4px 0;
+    height: auto;
+    display: none;
+    z-index: 1;
+}
+
+.menu>li {
+    position: relative;
+    padding: 0 50px;
+    color: pink;
+    list-style: none;
+    /* float: left; */
+    display: inline;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 2px solid pink;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.menu>li:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav>li {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.menu>li:hover>.nav {
+    color: pink;
+    cursor: pointer;
+}
+
+.nav>li:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+}
+
+.menu>li:hover>.nav {
+    display: block;
+}
+
+.nav_child {
+    display: none;
+    position: absolute;
+    width: 100px;
+    right: -100px;
+    top: 0px;
+}
+
+.nav_child>li {
+    list-style: none;
+    padding: 0 20px 0 10px;
+    color: pink;
+    background-color: rgb(60, 60, 60);
+    border-radius: 15px;
+}
+
+.nav_child>li:hover {
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.nav>li:hover>.nav_child {
+    color: #fff;
+    display: block;
+}
+
+#sound {
+    padding: 0;
+    margin: 0;
+    border-radius: 50px;
+    background-color: skyblue;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.introduction {
+    height: auto;
+    width: 25%;
+    position: absolute;
+    top: 58vh;
+    left: 10vh;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.intro li {
+    list-style-type: circle;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.intro li:hover {
+    cursor: default;
+}
+
+ul:hover {
+    cursor: default;
+}
+
+#what:hover {
+    cursor: help;
+}
+
+.web {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    position: absolute;
+    right: 20vh;
+    top: 30vh;
+}
+
+.web .T {
+    width: 100%;
+    line-height: 80px;
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid;
+    margin: 10px 0px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.web .T a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.T:hover {
+    border-color: pink;
+    box-shadow: 10px 10px 20px pink;
+}
+
+.T a:hover {
+    color: red;
+}
